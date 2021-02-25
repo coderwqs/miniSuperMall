@@ -1,0 +1,11 @@
+<!--pages/home/childComps/w-recommend/w-recommend.wxml-->
+<view class="recommend">
+  <block wx:for="{{recommend}}" wx:key="index">
+    <view class="recommend-item">
+      <image class="img" src="{{item.image}}" 
+            bindload="handleImageLoad"      
+      mode="widthFix"></image>
+        <text class="show">{{item.title}}</text>
+    </view>
+  </block>
+</view>

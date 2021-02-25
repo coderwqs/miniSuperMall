@@ -1,0 +1,20 @@
+/* pages/home/home.wxss */
+.background{
+  background-color: #fff
+}
+
+.fontcolor{
+  color:#000;
+}
+
+.size{
+  height: 390rpx;
+}
+
+.fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}

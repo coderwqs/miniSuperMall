@@ -1,0 +1,23 @@
+<!--pages/home/home.wxml-->
+
+<!-- 轮播图 -->
+<w-swiper list="{{banners}}" swiper_size="size" />
+
+<!-- 推荐数据展示 -->
+<w-recommend recommend="{{recommends}}" bind:imageLoad="handleImageLoad" />
+
+<!-- 本周流行显示 -->
+<w-popular />
+
+<!-- tab-control -->
+<tab-control id="tab-control" titles="{{titles}}" backgroundcolor="background" fontcolor="fontcolor" bind:itemClick="tabControlClick"
+  class="{{isTabFixed?'fixed':''}}" />
+
+<tab-control wx:if="{{isTabFixed}}"/>
+
+<!-- 展示商品数据 -->
+<w-goods goods="{{goods[currentType].list}}" />
+
+<!-- 返回顶部 -->
+<!-- hidden属性对自定义组件无效 -->
+<w-back-top wx:if="{{showBackTop}}" />

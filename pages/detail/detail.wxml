@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<text>pages/detail/detail.wxml</text>
+<!-- 页面跳转navigator  open-type="navigatorBack" 自定义返回 -->
+<!-- delta="number" number返回的层级-->
+<navigator url="/pages/profile/profile" open-type="navigateBack" delta="2">返回</navigator>

@@ -1,0 +1,4 @@
+/* pages/home/childComps/w-popular/w-popular.wxss */
+.img{
+  width: 100%;
+}

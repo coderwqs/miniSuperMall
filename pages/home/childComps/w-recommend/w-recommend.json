@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-recommend":"/pages/home/childComps/w-recommend/w-recommend"
+  }
+}
